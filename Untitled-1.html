@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KentAustin Ltd - Integrated Business Solutions</title>
+    <style>
+        :root {
+            --primary: #2e3236;
+            --secondary: #FF6600;
+            --light: #F5F5F5;
+            --dark: #333333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-img {
+            height: 60px;
+            margin-right: 15px;
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .logo-text span {
+            color: var(--secondary);
+            display: block;
+            font-size: 0.8rem;
+            font-weight: normal;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background-color: #e55c00;
+            transform: translateY(-2px);
+        }
+        .services {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: var(--light);
+        }
+        .services h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .service-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .service-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+        }
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+        .footer-section h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="KentAustin Logo.png" alt="KentAustin Ltd Logo" class="logo-img">
+            <div class="logo-text">KentAustin LTD </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Integrated Business Solutions for a Changing World</h1>
+        <p>KentAustin Ltd provides comprehensive services across multiple industries, delivering excellence in project management, construction, real estate, and more.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Comprehensive Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project Management" class="service-img">
+                <h3>Project Management</h3>
+                <p>Professional project planning, coordination, and execution to ensure your initiatives are delivered on time and within budget.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Real Estate Development" class="service-img">
+                <h3>Real Estate Development</h3>
+                <p>End-to-end property development services from land acquisition to construction and property management.</p>
+                
+        
+            </div>
+            <div class="service-card">
+                <img src="https://www.ricoh-europe.com/media/IM%20C2501CE%20NEWv2_tcm100-97982.png" alt="Printing & Designs" class="service-img">
+                <h3>Printing & Designs</h3>
+                <p>High-quality printing services and creative design solutions for all your business needs.</p>
+                
+            </div>
+            <div class="service-card">
+                <img src="https://t3.ftcdn.net/jpg/10/55/88/84/360_F_1055888459_ZlvOsUA0JfkoUDBUprua2nHwItW3LB3Y.jpg" alt="Import & Export" class="service-img">
+                <h3>Import & Export</h3>
+                <p>Global trade solutions for general merchandise with efficient logistics and customs clearance.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Construction Services" class="service-img">
+                <h3>Construction Services</h3>
+                <p>Road and building construction with a focus on quality, safety, and timely delivery.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://media.istockphoto.com/id/1777722488/photo/customer-service-and-relationship-concept-client-technical-service-warranty.jpg?b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=n172YjLGRKFcYvguJn_Pw4p8xKAhY_CIDDyA2G5JVwM=" alt="IT Consulting" class="service-img">
+                <h3>IT Consulting</h3>
+                <p>Technology solutions to streamline your operations and give you a competitive edge.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>KentAustin Ltd</h3>
+                <p>Providing integrated business solutions. Your success is our priority.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Plot No.10 Dome street</p>
+                <p>Taifa-Accra, Ghana</p>
+                <p>Phone: +233 59 344 5219 </p>
+                <p>+233 24 459 9006</p>
+                <p>Email: kentaustinconsult@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#home" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
+                    <li><a href="#about" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="#projects" style="color: white; text-decoration: none;">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 KentAustin Ltd. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
